@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Chat UI HTML Test</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation bar (top) -->
+        <div class="nav">
+            <div class="navbar-wrapper">
+                <span class="material-icons navbar-item">mail_outline</span> 
+                <span class="material-icons navbar-item">notifications_none</span>
+                <img class="navbar-item profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                <span class="name navbar-item">John Doe</span>
+                <span class="material-icons navbar-item">arrow_drop_down</span>
+            </div>
+        </div>
+        
+        <!-- Side bar (left) -->
+        <div class="sidebar">
+            <img class="logo" src="./images/logo.png" alt="logo" />
+            <div class="sidebar-icon"><img src="./images/sidebar_icons/baseline_widgets_black_24dp.png" alt="widgets" /></div>
+            <div class="sidebar-icon"><img src="./images/sidebar_icons/baseline_comment_black_24dp.png" alt="chat" /></div>
+            <div class="sidebar-icon"><img src="./images/sidebar_icons/baseline_share_black_24dp.png" alt="share" /></div>
+            <div class="sidebar-icon"><img src="./images/sidebar_icons/baseline_live_tv_black_24dp.png" alt="live tv" /></div>
+            <div class="sidebar-icon"><img src="./images/sidebar_icons/baseline_online_prediction_black_24dp.png" alt="online prediction" /></div>
+            <div class="sidebar-icon"><img src="./images/sidebar_icons/baseline_subject_black_24dp.png" alt="subject" /></div>
+        </div>
+
+        <!-- Messenger chat -->
+        <div class="messenger">
+            <div class="left">
+                <div class="search">
+                    <h6>Search Messages</h6>
+                    <form>
+                        <div class="search-bar">
+                            <span class="material-icons search-icon">search</span> 
+                            <input type="text" name="search" class="search-text">
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="recent-talks">
+                    <div class="recent-talks-header">
+                        <h6 class="recent-talks-title">Recent Talks</h6>
+                        <h6 class="all">All</h6>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+
+                    <div class="talk-list">
+                        <!-- Populate fake recent messages -->
+                        <div class="list-item">
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="message-content">
+                                <span class="message-name">John Smith</span>
+                                <br />
+                                <span>Lorem ipsum dolor...</span>
+                                <br />
+                                <span class="message-time">02.19 p.m.</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="message-content">
+                                <span class="message-name">John Smith</span>
+                                <br />
+                                <span>Lorem ipsum dolor...</span>
+                                <br />
+                                <span class="message-time">02.19 p.m.</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="message-content">
+                                <span class="message-name">John Smith</span>
+                                <br />
+                                <span>Lorem ipsum dolor...</span>
+                                <br />
+                                <span class="message-time">02.19 p.m.</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="message-content">
+                                <span class="message-name">John Smith</span>
+                                <br />
+                                <span>Lorem ipsum dolor...</span>
+                                <br />
+                                <span class="message-time">02.19 p.m.</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="message-content">
+                                <span class="message-name">John Smith</span>
+                                <br />
+                                <span>Lorem ipsum dolor...</span>
+                                <br />
+                                <span class="message-time">02.19 p.m.</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="message-content">
+                                <span class="message-name">John Smith</span>
+                                <br />
+                                <span>Lorem ipsum dolor...</span>
+                                <br />
+                                <span class="message-time">02.19 p.m.</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="message-content">
+                                <span class="message-name">John Smith</span>
+                                <br />
+                                <span>Lorem ipsum dolor...</span>
+                                <br />
+                                <span class="message-time">02.19 p.m.</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="message-content">
+                                <span class="message-name">John Smith</span>
+                                <br />
+                                <span>Lorem ipsum dolor...</span>
+                                <br />
+                                <span class="message-time">02.19 p.m.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="chatroom-container">
+                    <div class="chatroom-title">
+                        <div class="title-name">
+                            <img class="profile-pic pic-margin" src="images/blank-profile-picture-973460_640.png" alt="profile picture" /> 
+                            <h5>John Smith</h5>
+                        </div>
+                    </div>
+
+                    <div class="chatting">
+                        <div class="chat their-chat">
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="chatter-box">
+                                <p>Lorem ipsum dolor sit amet?</p>
+                            </div>
+                            <div class="timestamp">50 minutes ago ✔️</div>
+                        </div>
+
+                        <div class="chat your-chat">
+                            <div class="chatter-box">
+                                <p>Lorem ipsum dolor sit amet!</p>
+                            </div>
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="timestamp your-timestamp">35 minutes ago ✔️</div>
+                        </div>
+
+                        <div class="chat their-chat">
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="chatter-box">
+                                <p>Lorem ipsum dolor sit amet? Lorem ipsum dolor sit amet? Lorem ipsum dolor sit amet?</p>
+                            </div>
+                            <div class="timestamp">22 minutes ago ✔️</div>
+                        </div>
+
+                        <div class="chat their-chat">
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="chatter-box">
+                                <p>Lorem ipsum dolor sit amet?</p>
+                            </div>
+                            <div class="timestamp">10 minutes ago ✔️</div>
+                        </div>
+                        
+                        <div class="chat your-chat">
+                            <div class="chatter-box">
+                                <p>Lorem ipsum dolor sit amet!</p>
+                            </div>
+                            <img class="profile-pic" src="images/blank-profile-picture-973460_640.png" alt="profile picture" />
+                            <div class="timestamp your-timestamp"> minutes ago ✔️</div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="type-and-send">
+                        <span class="material-icons">attach_file</span> <span class="material-icons">sentiment_satisfied_alt</span> Type a text...
+                        <span class="material-icons send">send</span>
+                    </div> 
+
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

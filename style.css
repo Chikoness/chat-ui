@@ -1,0 +1,319 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav {
+    top: 0;
+    position: fixed;
+    height: 4rem;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.navbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    position: fixed;
+    padding: 1rem;
+    width: 15rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.navbar-item {
+    color: #a9a9a9;
+}
+
+.name {
+    margin-top: 10px;
+}
+
+.sidebar {
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 4rem;
+    background: #fff;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+
+.logo {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+
+.sidebar-icon {
+    max-width: 100%;
+    display: flex;
+    padding: 15px 0;
+    margin: 30px 0;
+    height: auto;
+    cursor: pointer;
+}
+
+.sidebar-icon:hover {
+    background: goldenrod;
+}
+
+.messenger {
+    background: #f3f3f3;
+}
+
+.left {
+    margin: 4rem 0 0 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15rem;
+    padding: 1.5rem;
+    background: #f3f3f3;
+    z-index: 1;
+}
+
+.search-bar {
+    height: 3vh;
+    position: fixed;
+    top: 7rem;
+}
+
+.search {
+    height: 5rem;
+}
+
+.search-text {
+    padding-left: 40px;
+    border: none;
+}
+
+.search-text:focus {
+    outline: none;
+}
+
+.search-icon {
+    position: fixed;
+    top: 6.6rem;
+    left: 5.8rem;
+}
+
+.recent-talks {
+    height: 70%;
+}
+
+.recent-talks-header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    height: 2rem;
+}
+
+.recent-talks-title {
+    margin-top: 13px;
+}
+
+.all {
+    margin-top: 13px;
+    margin-left: 65px;
+}
+
+.talk-list {
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+.list-item {
+    height: 5rem;
+    background: #fff;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background: goldenrod;
+    color: white;
+}
+
+.message-content {
+    font-size: 16px;
+}
+
+.message-name {
+    font-weight: bolder;
+}
+
+.message-time {
+    color: darkgray;
+    font-size: 5px;
+}
+
+.right {
+    background: #f3f3f3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.chatroom-container {
+    margin: 4rem 0 0 18rem;
+    padding: 30px;
+    max-height: 80rem;
+    max-width: 100%;
+}
+
+.chatroom-title {
+    background: #fff;
+    height: 3rem;
+    text-align: right;
+}
+
+.title-name {
+    left: 20rem;
+    position: fixed;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.pic-margin {
+    margin: -10px 10px 0 0;
+}
+
+.chatting {
+    background: #fff;
+    max-height: 70vh;
+    padding: 5px 20px;
+    overflow-y: scroll;
+}
+
+.chat {
+    height: auto;
+}
+
+.your-chat {
+    text-align: right;
+}
+
+.their-chat {
+    text-align: left;
+}
+
+.chatter-box {
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.timestamp {
+    font-size: 5px;
+    width: 10rem;
+    height: auto;
+    margin-top: -15px;
+    padding-left: 20px;
+}
+
+.your-timestamp {
+    margin-right: 4.5rem;
+}
+
+.type-and-send {
+    background: #fff;
+    bottom: 0%;
+    position: sticky;
+    height: 3rem;
+    max-width: 100%;
+    padding: 10px;
+    color: darkgray;
+}
+
+.send {
+    position:fixed;
+    right: 0;
+    padding-right: 60px;
+}
+
+/* For easy icons */
+@font-face {
+    font-family: 'Material Icons';
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    margin-top: 10px;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+@media (max-width: 768px) {
+    .left {
+        width: 8rem;
+    }
+
+    .message-content {
+        display: none;
+    }
+
+    .recent-talks-header {
+        margin-left: -3rem;
+    }
+
+    .recent-talks-title {
+        display: none;
+    }
+
+    .search {
+        height: 3rem;
+        margin-top: 20px;
+    }
+
+    .search>h6 {
+        display: none;
+    }
+
+    .search-icon {
+        top: 7rem;
+    }
+
+    .search-text {
+        height: 2rem;
+        width: 4.7rem;
+    }
+
+    .chatroom-container {
+        margin: 4rem 0 0 10rem;
+    }
+
+    .title-name {
+        left: 12rem;
+    }
+}
